@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ project.title }}</title>
+</head>
+<body>
+  <h1>{{ project.title }}</h1>
+  <p>{{ project.description }}</p>
+
+  <h2>평가하기 (1~5점)</h2>
+  <form method="post">
+    {% csrf_token %}
+    <select name="score">
+      {% for i in range %}
+        <option value="{{ i }}">{{ i }}</option>
+      {% endfor %}
+    </select>
+    <button type="submit">투표</button>
+  </form>
+
+  <h2>현재 평균 점수: {{ project.average_score }}</h2>
+
+  <a href="{% url 'projects:project_list' %}">← 프로젝트 목록으로</a>
+</body>
+</html>
