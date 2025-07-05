@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Project, Rating
+from django.db.models import Avg
 
 def project_list(request):
-    projects = Project.objects.all().order_by('-created_at')
+    projects = Project.objects.annotate(avg_score=Avg('ratings__score')).order_by('-avg_score')
     return render(request, 'projects/project_list.html', {'projects': projects})
 
 def project_detail(request, pk):
