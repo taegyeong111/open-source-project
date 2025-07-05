@@ -6,17 +6,13 @@
 <body>
   <h1>프로젝트 목록</h1>
   <ul>
-     {% for project in projects %}
-        <li>
+    {% for project in projects %}
+      <li>
         <a href="{% url 'projects:project_detail' project.pk %}">
-            <strong>{{ project.title }}</strong>
+          {{ project.title }} (평균 점수: {{ project.average_score }})
         </a>
-        <br>
-        평균 점수: <span>{{ project.average_score }}</span>
-        </li>
-     {% empty %}
-        <li>등록된 프로젝트가 없습니다.</li>
-     {% endfor %}
+      </li>
+    {% endfor %}
   </ul>
 </body>
 </html>

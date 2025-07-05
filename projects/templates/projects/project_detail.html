@@ -8,10 +8,10 @@
   <p>{{ project.description }}</p>
 
   <h2>평가하기 (1~5점)</h2>
-  <form method="post">
+  <form method="post" action="{% url 'projects:project_vote' project.pk %}">
     {% csrf_token %}
     <select name="score">
-      {% for i in range %}
+      {% for i in '12345' %}
         <option value="{{ i }}">{{ i }}</option>
       {% endfor %}
     </select>
