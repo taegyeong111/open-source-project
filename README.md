@@ -23,7 +23,7 @@ Open Source Project - 웹사이트 구축
 
 3. 프로젝트 구조
 
-open-source-project/
+open-source-project/                                                                                                                                                                                  
 ├── app/# Django 애플리케이션 코드                                                                                                                                                                                    
 │   ├── migrations/# 데이터베이스 마이그레이션                                                                                                                                                                       
 │   ├── models.py# 데이터 모델
