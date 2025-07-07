@@ -24,18 +24,18 @@ Open Source Project - 웹사이트 구축
 3. 프로젝트 구조
 
 open-source-project/
-├── app/                    # Django 애플리케이션 코드
-│   ├── migrations/         # 데이터베이스 마이그레이션
-│   ├── models.py           # 데이터 모델
-│   ├── views.py            # 뷰 및 로직
+├── app/# Django 애플리케이션 코드                                                                                                                                                                                    
+│   ├── migrations/# 데이터베이스 마이그레이션                                                                                                                                                                       
+│   ├── models.py# 데이터 모델
+│   ├── views.py# 뷰 및 로직                                                                                                                                                                                  
 │   └── ...
-├── docker/                 # Docker 관련 파일
-│   ├── Dockerfile          # Dockerfile
-│   ├── docker-compose.yml  # Docker Compose 설정
-│   └── ...
-├── README.md               # 프로젝트 설명서
-├── manage.py               # Django 프로젝트 관리 명령어
-└── requirements.txt        # 필요한 라이브러리 목록
+├── docker/# Docker 관련 파일                                                                                                                                                                                  
+│   ├── Dockerfile# Dockerfile                                                                                                                                                                                  
+│   ├── docker-compose.yml# Docker Compose 설정                                                                                                                                                                      
+│   └── ...                                                                                                                                                                                  
+├── README.md# 프로젝트 설명서                                                                                                                                                                                  
+├── manage.py# Django 프로젝트 관리 명령어                                                                                                                                                                            
+└── requirements.txt# 필요한 라이브러리 목록                                                                                                                                                                                  
 
 4. 설치 및 실행 방법
   4.1 로컬 환경에서 실행
